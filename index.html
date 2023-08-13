@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Message generator | Eugenio Ferraiuolo</title>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0_sKJJ064X-StxqB1QZBtBFccGeZulRrqMw&usqp=CAU" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gantari:wght@200&family=Nunito:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,200&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/e2afbb6d02.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <h1>Xmas list</h1>
+            </div>
+            <div class="header-bottom">
+                <h2>Spesa totale: <span class="total-slot">€0.00</span></h2>
+            </div>
+        </header>
+        <main>
+        
+            <!-- LIST ELEMENT -->
+            <ul class="list">
+                <!-- <li class="list-element">
+                    <div class="list-info">
+                        <h3>Eugenio</h3>
+                        <p>tablet</p>
+                    </div>
+                    <div class="list-price">€5</div>
+                   <button class="list-delete"><i class="fas fa-trash-alt fa 4x"></i></button>
+                </li> -->
+            </ul>
+            
+            <!-- FORM ELEMENT -->
+            <form id="list-form">
+                <div class="form-fields">
+                    <input id="field-name" type="text" placeholder="name" autofocus required>
+                    <input id="field-price" min="0.01" step="0.01" max="100" type="number" placeholder="price" required>
+                    <input id="field-description" type="text" maxlength="50" placeholder="description" required>
+                </div>
+                <button><i class="fas fa-plus"></i></button>
+            </form>
+        </main>
+
+
+        <!-- <footer>
+            <p>this project is made by <a href="http://instagram.com/eugenio.ferraiuolo">eugenio ferraiuolo</a></p>
+        </footer> -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
